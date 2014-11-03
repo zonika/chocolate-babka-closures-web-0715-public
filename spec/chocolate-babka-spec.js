@@ -2,11 +2,11 @@ describe('Chocolate Babka Counter', function() {
   describe('basic counter closure accepting a starting number', function() {  
     var bakeryCounter = counterCreator(0);
     it('should increment the number', function() {
-      expect(bakeryCounter()).toEq(1);
+      expect(bakeryCounter()).toEqual(1);
     });
     it('should keep track of the count', function() {
-      expect(bakeryCounter()).toEq(2);
-      expect(bakeryCounter()).toEq(3);
+      expect(bakeryCounter()).toEqual(2);
+      expect(bakeryCounter()).toEqual(3);
     });
   });
   describe('Has a seperate bakery counter and babka counter', function() {
@@ -14,8 +14,8 @@ describe('Chocolate Babka Counter', function() {
       var bakeryCounter = counterCreator(3),
       babkaCounter = counterCreator(5);
 
-      expect(bakeryCounter()).toEq(4);
-      expect(babkaCounter()).toEq(6);
+      expect(bakeryCounter()).toEqual(4);
+      expect(babkaCounter()).toEqual(6);
     });
   });
 });
@@ -28,8 +28,8 @@ describe('Line number announcer', function() {
         babkaAnnouncer = countAnnouncer('Babka', babkaCounter);
 
     it('should announce who is now being served in both lines', function() {
-      expect(bakeryAnnouncer()).toEq('Now serving Baked Goods number 4!');
-      expect(babkaAnnouncer()).toEq('Now serving Babka number 6!');
+      expect(bakeryAnnouncer()).toEqual('Now serving Baked Goods number 4!');
+      expect(babkaAnnouncer()).toEqual('Now serving Babka number 6!');
     });
   });
 });
