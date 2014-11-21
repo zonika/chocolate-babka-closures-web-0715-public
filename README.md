@@ -19,7 +19,7 @@ ex.
 function idMaker(phrase) {
   var greeting = phrase;
   
-  // this inner function has access to the outer function's variables including the parameter
+  // this inner function has access to the outer function's variables and argument(s)
   return function(firstName, lastName){
     return greeting + firstName + ' ' + lastName + '.';
   };
@@ -34,12 +34,14 @@ labelMaker('Steven', 'Nunez');
 // -> 'Hello, my name is Steven Nunez'
 ```
 
-The code above works because we saved the returned function to a variable, making it a function expression. And we store in a variable, along with the returned inner function, the `greeting` variable.  Therefore, the returned function now has saved access to the `greeting` variable that is out of direct scope to us.
+The code above works because we saved the returned function to a variable, making it a function expression. Because as the code was run the inner function had access to the `greeting` variable it now has saved access to it.  Even though we can not directly access `greeting` we can see its value gets returned when we call the `labelMaker` function.
 
 # Requirements
 Your counter will need to start at a number based on what is passed in. It must then return a function that, when called, will increment number that was passed in.
 
 Also, the baker has realized that she will need a seperate counter for the babkas since they are so popular.  This __doesn't__ mean you need to make a new function for the babka counter. However, to make sure customers know which number is being served, you will need to make a second function that accepts the returned closure as an argument as well as a string to announce which line is being served.
+
+This will mean you need to make two seperate functions that create closures by returning inner functions.  Follow the specs for more information.
 
 ##Before You Start
 Install jasmine:
