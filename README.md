@@ -1,9 +1,3 @@
----
-  tags: closures, scope
-  languages: JavaScript, js
-  resources: 1
----
-
 # Chocolate Babka
 You're running late to a dinner party, you need to bring something.  Why not a chocolate babka? Sure, cinnamon has it's good qualities but you want chocolate.  The only problem is the bakery's ticket machine is broken.  You're smart, enterprising engineer, so you make a deal with the owner that if you get it working you can have your Babka free of charge.
 
