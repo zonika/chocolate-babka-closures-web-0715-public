@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="3" errors="0" failures="0" time="0.007" timestamp="2015-09-09T09:21:34">
+		<testcase classname="Chocolate Babka Counter" name="basic counter closure accepting a starting number should increment the number" time="0.002">
+		</testcase>
+		<testcase classname="Chocolate Babka Counter" name="basic counter closure accepting a starting number should keep track of the count" time="0.001">
+		</testcase>
+		<testcase classname="Chocolate Babka Counter" name="Has a seperate bakery counter and babka counter should increment only one counter" time="0">
+		</testcase>
+	</testsuite>
+</testsuites>
+
