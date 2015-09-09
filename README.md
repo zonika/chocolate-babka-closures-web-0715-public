@@ -6,13 +6,13 @@ You're running late to a dinner party, you need to bring something.  Why not a c
 This is your moment to shine, no Pepsi and Ring Dings for you.  You're an adult you're gonna get a chocolate babka and a nice bottle of wine to impress your friends.  You just need to understand JavaScript closures first.
 
 # Closures
-Closures are like small snapshots of the scope of a function at a certain place in time.  This is achieved by returning an anoymous function from within a function.  Variables defined within that outer function will be within scope for the inner function that is returned.  We can then call the returned inner function, which will access the variable stoed in its closure.
+Closures are like small snapshots of the scope of a function at a certain place in time.  This is achieved by returning an anonymous function from within a function.  Variables defined within that outer function will be within scope for the inner function that is returned.  We can then call the returned inner function, which will access the variable stored in its closure.
 
 ex.
 ```javascript
 function idMaker(phrase) {
   var greeting = phrase;
-  
+
   // this inner function has access to the outer function's variables and argument(s)
   return function(firstName, lastName){
     return greeting + firstName + ' ' + lastName + '.';
@@ -33,9 +33,9 @@ The code above works because we saved the returned function to a variable, makin
 # Requirements
 Your counter will need to start at a number based on what is passed in. It must then return a function that, when called, will increment number that was passed in.
 
-Also, the baker has realized that she will need a seperate counter for the babkas since they are so popular.  This __doesn't__ mean you need to make a new function for the babka counter. However, to make sure customers know which number is being served, you will need to make a second function that accepts the returned closure as an argument as well as a string to announce which line is being served.
+Also, the baker has realized that she will need a separate counter for the babkas since they are so popular.  This __doesn't__ mean you need to make a new function for the babka counter. However, to make sure customers know which number is being served, you will need to make a second function that accepts the returned closure as an argument as well as a string to announce which line is being served.
 
-This will mean you need to make two seperate functions that create closures by returning inner functions.  Follow the specs for more information.
+This will mean you need to make two separate functions that create closures by returning inner functions.  Follow the specs for more information.
 
 ##Before You Start
 Install jasmine:
